@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.bupt.netstat.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/linear_pcap_file_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pcapfile" />
+
+        <TextView
+            android:id="@+id/textview_file_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pcapfilelength" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_pcap_file_info"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/medium" >
+
+        <Button
+            android:id="@+id/button_dump_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dump_start" />
+
+        <Button
+            android:id="@+id/button_dump_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dump_stop" />
+
+        <Button
+            android:id="@+id/button_analyze"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/analyze" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_buttons"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium"
+            android:text="@string/select_pkg_name" />
+
+        <Spinner
+            android:id="@+id/spinner_pkg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium" />
+
+        <Button
+            android:id="@+id/button_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium"
+            android:text="@string/clear_cache" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium"
+            android:text="@string/select_pkg_type" />
+
+        <Spinner
+            android:id="@+id/spinner_pkg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/medium"
+            android:text="@string/accessed_servers" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/medium" >
+
+            <TextView
+                android:id="@+id/textview_ip_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_result"
+                android:textSize="18sp" />
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

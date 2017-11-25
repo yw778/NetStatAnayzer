@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NetStateAnalyzer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pcapfile">Pcap file:</string>
+    <string name="pcapfilelength">0B</string>
+    <string name="dump_start">Capture</string>
+    <string name="dump_stop">Stop</string>
+    <string name="analyze">Analyze</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="exit">Exit ?</string>
+    <string name="select_pkg_name">Input the App name:</string>
+    <string name="set_pkg_name">Set</string>
+    <string name="select_pkg_type">Select the App type</string>
+    <string name="accessed_servers">Accessed servers:</string>
+    <string name="no_result">null</string>
+    <string name="title_activity_net_quality_indicators">Metrics</string>
+    <string name="title_activity_packet_details">Packet Details</string>
+    <string name="title_activity_set_weight">Set Weight</string>
+    <string name="processing_hint">Processing</string>
+    <string name="description_icon">Icon</string>
+    <string name="notify_capturing">Capturing</string>
+    <string name="retransmission">Packet Loss:</string>
+    <string name="avr_dns_time">Avr. DNS Time:</string>
+    <string name="avr_tcp_conn_time">Avr. TCP Conn. Time:</string>
+    <string name="avr_response_time">Avr. Response Time:</string>
+    <string name="avr_loading_time">Avr. Loading Time:</string>
+    <string name="avr_speed">Avr. Speed:</string>
+    <string name="total_traffic">Total Traffic:</string>
+    <string name="thread_numbers">Thread Numbers:</string>
+    <string name="delay_jitter">Delay Jitter:</string>
+    <string name="advertise">Advertisement:</string>
+    <string name="ResEfficiency">Res Efficiency:</string>
+    <string name="SecureIndex">SecureIndex:</string>
+    <string name="tradeTime">TradeTime:</string>
+    <string name="sex">Gender:</string>
+    <string name="age">Age:</string>
+    <string name="score">Score(0-100):</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="thanks">Thanks for your scoring! After you confirm the score,please press the Analyze button to checkout the score
+        we scored for you!</string>
+    
+
+    <string-array name="pkg_types">
+        <item>Web</item>
+        <item>Download</item>
+        <item>Video</item>
+        <item>Trade</item>
+        <item>Game</item>
+        <item>Social</item>
+        <item>Other</item>
+    </string-array>
+    
+    <drawable name="bkcolor">#abc88b</drawable>
+
+</resources>
